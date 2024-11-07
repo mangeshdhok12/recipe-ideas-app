@@ -55,8 +55,11 @@ npm run dev
 4. Click the Clear button to reset the search input and results.
 
 ## Component Overview
+
 1. App:
+
 • Role: Serves as the main container for the app's functionality and state management.
+
 • Responsibilities:
 Manages the state for searchTerm, recipes, error, and loading.
 Contains key functions:
@@ -66,8 +69,9 @@ Coordinates data flow between child components (like SearchInput and RecipeList)
 
 2. SearchInput:
 
-•Role: Provides a user interface for entering a search term and initiating or clearing the search.
-•Responsibilities:
+• Role: Provides a user interface for entering a search term and initiating or clearing the search.
+
+• Responsibilities:
 Renders an input field where users type an ingredient or recipe name.
 Has "Search" and "Clear" buttons to trigger recipe search or reset the input.
 Calls fetchRecipes from App on clicking "Search" and clearSearch when "Clear" is pressed, keeping the input interactions modular.
@@ -75,6 +79,7 @@ Calls fetchRecipes from App on clicking "Search" and clearSearch when "Clear" is
 3. RecipeList:
 
 • Role: Displays a list of recipes in the form of recipe cards.
+
 • Responsibilities:
 Maps through the recipes array and renders each recipe as a RecipeCard.
 Acts as a wrapper component to organize and structure how individual recipe cards are shown, ensuring a clean and cohesive display of results.
@@ -82,6 +87,7 @@ Acts as a wrapper component to organize and structure how individual recipe card
 4. RecipeCard:
 
 • Role: Renders individual recipe information in a card format.
+
 • Responsibilities:
 Displays a recipe image and title based on the recipe data passed from RecipeList.
 Creates a visually consistent and user-friendly representation for each recipe, making it easy for users to browse through options.
@@ -89,6 +95,7 @@ Creates a visually consistent and user-friendly representation for each recipe, 
 5. SkeletonRecipeCard:
 
 • Role: Provides a loading placeholder that appears while the app fetches recipe data.
+
 • Responsibilities:
 Mimics the appearance of a RecipeCard with greyed-out elements to show users that content is loading.
 Improves user experience by offering visual feedback during data fetch, making the app feel more responsive and polished.
