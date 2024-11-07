@@ -49,9 +49,13 @@ npm run dev
 4. Open your browser and visit http://localhost:5173
 
 *Usage
-1.Enter an ingredient or recipe name in the search bar.
+
+1. Enter an ingredient or recipe name in the search bar.
+
 2. Click the Search button to fetch recipes.
+
 3. The app will display recipe cards with images and names of matching recipes.
+
 4. Click the Clear button to reset the search input and results.
 
 ## Component Overview
