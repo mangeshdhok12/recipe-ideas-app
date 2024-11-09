@@ -56,7 +56,11 @@ npm run dev
 
 3. The app will display recipe cards with images and names of matching recipes.
 
-4. Click the Clear button to reset the search input and results.
+4. Added the functionality "add to Favorites". Taylor can add the dish to favorites tab and can see the dish in saperate section.
+
+5. Also he can remove the dish from Favorite Dishes tab.
+
+6.. Click the Clear button to reset the search input and results.
 
 ## Component Overview
 

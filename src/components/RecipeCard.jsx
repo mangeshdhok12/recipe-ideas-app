@@ -1,16 +1,24 @@
-
 import React from 'react';
 
-const RecipeCard = ({ recipe }) => {
-
-// In this component we are displaying details of single recipe which includes image and title.
-
+function RecipeCard({ recipe, toggleFavorite, isFavorite }) {
   return (
     <div className="recipe-card">
+      {/* Display the recipe image using strMealThumb */}
       <img src={recipe.strMealThumb} alt={recipe.strMeal} className="recipe-image" />
-      <h3 className="recipe-title">{recipe.strMeal}</h3>
+      
+      {/* Display the recipe title using strMeal */}
+      <div className="recipe-title">{recipe.strMeal}</div>
+
+      {/* Button for adding/removing the recipe to/from favorites */}
+      <button
+        className={`favorite-btn ${isFavorite ? 'favorited' : ''}`}  // Apply 'favorited' class if recipe is a favorite
+        onClick={() => toggleFavorite(recipe)}  // Call toggleFavorite function when the button is clicked
+      >
+        {/* Button text changes depending on whether the recipe is a favorite */}
+        {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
+      </button>
     </div>
   );
-};
+}
 
 export default RecipeCard;
